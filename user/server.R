@@ -1,3 +1,4 @@
+
 # Installing package if not already installed (Stanton 2013)
 EnsurePackage<-function(x)
 {x <- as.character(x)
@@ -46,8 +47,8 @@ shinyServer(function(input, output) {
   
   # Function to create a data frame from tweets
   
-  pos.words = scan('C:/Users/Hamsini Sankaran/Downloads/Twitter-Sentiment-Analysis-R-Tutorials-master/Twitter-Sentiment-Analysis-R-Tutorials-master/positive-words.txt', what='character', comment.char =';')
-  neg.words = scan('C:/Users/Hamsini Sankaran/Downloads/Twitter-Sentiment-Analysis-R-Tutorials-master/Twitter-Sentiment-Analysis-R-Tutorials-master/negative-words.txt', what='character', comment.char =';')
+  pos.words = scan('C:/Users/Hamsini Sankaran/Downloads/Twitter-Sentiment-Analysis-R-Tutorials-master/Twitter-Sentiment-Analysis-R-Tutorials-master/positive-words.txt', what='character', comment.char=';')
+  neg.words = scan('C:/Users/Hamsini Sankaran/Downloads/Twitter-Sentiment-Analysis-R-Tutorials-master/Twitter-Sentiment-Analysis-R-Tutorials-master/negative-words.txt', what='character', comment.char=';')
   
   wordDatabase<-function()
   {
